@@ -58,3 +58,9 @@ $(".btn").on("click", function(){
     aniPress(userClick);
     checkPattern(userSequence.length-1);
 });
+$("h1").click(function(){
+    if(!start){
+        nextPattern();
+        start = true;
+    }
+});
